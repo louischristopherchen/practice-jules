@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louis Chen - Fullstack Developer</title>
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <noscript>
+        <style>
+            .lazy-load {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <div class="container">
@@ -25,12 +34,12 @@
         </header>
 
         <main>
-            <section class="about-section">
+            <section class="about-section lazy-load">
                 <h2>About Me</h2>
                 <p>Passionate Fullstack Developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems and continuously learning new technologies.</p>
             </section>
 
-            <section class="skills-section">
+            <section class="skills-section lazy-load">
                 <h2>Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
@@ -79,7 +88,7 @@
                 </div>
             </section>
 
-            <section class="interests-section">
+            <section class="interests-section lazy-load">
                 <h2>Interests & Approach</h2>
                 <div class="interests-grid">
                     <div class="interest-card">
@@ -106,5 +115,6 @@
             <p>&copy; 2026 Louis Chen. All rights reserved.</p>
         </footer>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
